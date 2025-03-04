@@ -1,3 +1,4 @@
+body{
 img {
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -7,4 +8,14 @@ img {
   
   <img src="K-Fix-logo.jpg" alt="K-Fix logo">
 
-  
+
+
+    img {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        width: 150px;
+      }
+      
+      <img src="Cart.jpg" alt="Cart">
+    }
