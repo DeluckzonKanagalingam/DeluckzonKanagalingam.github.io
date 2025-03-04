@@ -6,19 +6,34 @@
     <title>Lähetä Kenkäsi TÄNÄÄN ja me hoidamme puolestasi:K-FIX</title>
 </head>
 
-<img src="K-Fix-logo.jpg" alt="K-FIX logo">
-<img src="Cart.jpg" alt="Cart">
+<img src="K-Fix-logo.jpg" alt="K-FIX logo">  <!-- Yrityksen logo -->
 
-<link rel="stylesheet" href="kfix.css">
+<link rel="stylesheet" href="kfix.css"> <!-- Linkki CSS logo -->
 
-<header id="etusivu">
-    <nav>
-       <a href="index.html" id="valittu">Etusivu</a>
-       <a href="kahvit.html">Hinnasto</a>
-       <a href="yhteys.html">Yhteystiedot</a>    
-    </nav>
-    <h1 id="slogan">Lähetä Kenkäsi ja me hoidamme puolestasi</h1>
-       <a href="yhteys.html" class="toimintakehote">Tilaa tänään!</a>
-    
+<nav class="navbar"> <!-- Luodaan navingointi, jotta sivustolla voi liikkua -->
+    <div class="navbar__container">
+      <a href="etusivu" id="navbar__logo">COLOR</a>
+      <div class="navbar_toggle" id="mobile-menu"></div> 
+      <span class="bar"></span>      
+      <span class="bar"></span>      
+      <span class="bar"></span>      
+    </div>
+    <ul class="navbar__menu"><!-- Hampurilaisvalikko -->
+        <li class="navbar__item">
+            <a href="#Etusivu" class="navbar__links" id="Etusivu-page">Etusivu</a>
+        </li>
+        <li class="navbar__item">
+            <a href="#Hinnasto" class="navbar__links" id="Hinnasto-page">Hinnasto</a>
+        </li>
+        <li class="navbar__item">
+            <a href="#Yhteystiedot" class="navbar__links" id="yhteystiedot-page">Yhteystiedot</a>
+        </li>
+        <li class="navbar__btn">
+            <a href="#Tilaa" class="button" id="Tilaa">Tilaa</a>
+        </li>
+    </ul>
+</nav>
 </body>
 </html>
+
+
