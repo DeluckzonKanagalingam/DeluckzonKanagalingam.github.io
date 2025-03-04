@@ -1,3 +1,10 @@
-body{
-<img src="K-Fix-logo.jpg" alt="K-FIX logo"> width = "500" height ="500"
-}
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+  }
+  
+  <img src="K-Fix-logo.jpg" alt="K-Fix logo">
+
+  
