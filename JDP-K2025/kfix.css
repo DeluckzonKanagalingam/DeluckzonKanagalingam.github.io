@@ -290,16 +290,16 @@
 
 .main__content h2 {
   font-size: 4rem;
-  background: #ff8177; /* fallback for old browsers */
+  background: #ffffff; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #9114ff,
-    #da22ff
+    #ffffff,
+    #ffffff
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #8f0eff,
-    #da22ff
+    #ffffff,
+    #ffffff
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
@@ -314,7 +314,7 @@
   font-weight: 700;
 }
 
-.main__btn {
+.main__btn {/* .btn kohdasta sama väri */
   font-size: 1.8rem;
   background: #3a0cf5;
   background: -webkit-linear-gradient(to right, #1319da, #fd1d1d, #833ab4);
@@ -336,14 +336,14 @@
   text-decoration: none;
 }
 
-.main__btn:after {
+.main__btn:after { /* tesktin päällä vaihtuva väri */
   position: absolute;
   content: '';
   top: 0;
   left: 0;
   width: 0;
   height: 100%;
-  background: #ff1ead;
+  background: #3906f5;
   transition: all 0.35s;
   border-radius: 4px;
 }
@@ -372,9 +372,11 @@
   background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
 }
 
-.fa-layer-group,
+.fa-credit-card,
 .fa-users {
   font-size: 14rem;
+  color: rgb(255, 0, 0);
+  display: block;
 }
 
 #card-2 {
