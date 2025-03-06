@@ -3,16 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prices</title>
+    <title>Services</title>
+    <link rel="stylesheet" href="kfixhinnasto.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
 </head>
 <body>
-<h1>Prices</h1>
-    <h2>Shoe cleaning services</h2>
-        <p>1 pair: 40€</p>
-        <p>2 pairs: 80€. Free shoe tree included</p>
-        <p>Free shipping for all 100€+ orders.</p>
-            <h3>Muita palveluita</h3>
+    <nav class="navbar">
+        <div class="navbar__container">
+          <a href="#Etusivu" id="navbar__logo">K-FIX</a>
+          <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span> <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <a href="#Etusivu" class="navbar__links" id="etusivu-page">Etusivu</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#Hinnasto" class="navbar__links" id="hinnasto-page">Hinnasto</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#Yhteystiedot" class="navbar__links" id="yhteystiedot-page"
+                >Yhteystiedot</a
+              >
+            </li>
+            <li class="navbar__btn">
+              <a href="#Tilaa" class="button" id="Tilaa">Tilaa</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  
+      <!-- pää kohta -->
+      
+        <div class="hero__container">
+          <h1 class="hero__heading">Services</h1>
+          <div class= "hero-list">
+            <h2>Shoe cleaning services:</h2>
+        <div class="columns">
+            <ul class="hinta">
+                <li class="header">1 pair</li>
+                <li class="harmaa">40€</li>
+            </ul>
+        </div>
+        <div class="columns">
+            <ul class="hinta">
+                <li class="header">2 pairs</li>
+                <li class="harmaa">80€</li>
+                <li>Free shoe tree</li>
+            </ul>
+        </div>
+        <div class="columns">
+            <ul class="hinta">
+                <li class="header">100€+ order</li>
+                <li class="harmaa">Free shipping</li>
+                <li>Free shoe tree</li>
+            </ul>
+        </div>
+        <br><h3>Other services:</h3>
             <p>We also do minor repairs on shoes free of charge.</p>
             <p>We do not offer cobbler services!</p>
+        </div>
+        </div>
+
+  
+  
+      <!-- Services Section -->
+     
+  
+      
+  
+      <!-- Footer Section -->
+      <div class="footer__container">
+        <div class="footer__links">
+          <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+              <h2>About Us</h2>
+              <a href="/sign__up">How it works</a> <a href="/">Testimonials</a>
+              <a href="/">Careers</a> <a href="/">Terms of Service</a>
+            </div>
+            <div class="footer__link--items">
+              <h2>Contact Us</h2>
+              <a href="/">Contact</a> <a href="/">Support</a>
+              <a href="/">Destinations</a>
+            </div>
+          </div>
+          <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+              <h2>Videos</h2>
+              <a href="/">Submit Video</a> <a href="/">Ambassadors</a>
+              <a href="/">Agency</a>
+            </div>
+            <div class="footer__link--items">
+              <h2>Social Media</h2>
+              <a href="/">Instagram</a> <a href="/">Facebook</a>
+              <a href="/">Youtube</a> <a href="/">Twitter</a>
+            </div>
+          </div>
+        </div>
+        <section class="social__media">
+          <div class="social__media--wrap">
+            <div class="footer__logo">
+              <a href="/" id="footer__logo">K-FIX</a>
+            </div>
+            <p class="website__rights">© K-FIX 2024. All rights reserved</p>
+            <div class="social__icons">
+              <a href="/" class="social__icon--link" target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="/" class="social__icon--link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="/" class="social__icon--link"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a href="/" class="social__icon--link"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="/" class="social__icon--link"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </section>
+      </div>
+  
+      <script src="app.js"></script>
+    </body>
 </body>
 </html>
