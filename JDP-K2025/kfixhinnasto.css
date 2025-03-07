@@ -7,7 +7,7 @@
   }
   
   .navbar {
-    background:#0A0A0A; /* Valikon väri */
+    background:#8e8d8d; /* Valikon väri */
     height: 80px;
     display: flex;
     justify-content: center;
@@ -30,8 +30,8 @@
   }
   
   #navbar__logo {  /* Muuta tähän musta K-Fix logo */
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-color: #1700ab;
+    background-image: linear-gradient(to top, #000000 0%, #0a94e4 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -54,7 +54,7 @@
     height: 80px;
   }
   
-  .navbar__links { /* Hinnasto, etusivu kaikki väri valkoinen.tyopoyta */
+  .navbar__links { 
     color: #fff;
     display: flex;
     align-items: center;
@@ -73,6 +73,17 @@
     width: 100%;
   }
   
+  .navbar__cart a {
+    color: #0A0A0A;
+    font-size: 2rem; 
+    padding: 0 15px;
+    display: inline-block; 
+  }
+  
+  .navbar__cart a:hover {
+    color: #fff;
+  }
+
   .button { /* Hinnasto, etusivu kaikki väri valkoinen.mobiili hampurilasvalikko paalla. */
     display: flex;
     justify-content: center;
@@ -84,15 +95,15 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #833ab4;
-    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background:#8e8d8d;
+    background: -webkit-linear-gradient(to right, #0A0A0A, #0A0A0A, #0A0A0A);
+    background: linear-gradient(to right, #0A0A0A, #0d92cf, #0A0A0A);
     color: #fff;
     transition: all 0.3s ease;
   }
   
   .navbar__links:hover {
-    color: #9518fc;
+    color: #1a3be0;
     transition: all 0.3s ease;
   }
   
@@ -120,26 +131,26 @@
     }
   
     .navbar__menu.active { /* Hinnasto, etusivu kaikki väri valkoinen.tyopoyta */
-      background: #131313;
-      top: 100%;
-      opacity: 1;
-      transition: all 0.5s ease;
-      z-index: 99;
-      height: 60vh;
-      font-size: 1.6rem;
-    }
-  
+        background: #8e8d8d;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 60vh;
+        font-size: 1.6rem;
+      }
+    
     #navbar__logo {
       padding-left: 25px;
     }
   
     .navbar__toggle .bar {
-      width: 25px;
-      height: 3px;
-      margin: 5px auto;
-      transition: all 0.3s ease-in-out;
-      background: #fff;
-    }
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #0A0A0A;
+      }
   
     .navbar__item {
       width: 100%;
@@ -192,8 +203,8 @@
   
   /* pää kohta */
   .hero {
-    background: #131313; ;  /* fallback for old browsers */
-    padding: 200px 0;
+    background: #a5a5a5; ;  /* fallback for old browsers */
+    padding: 150px 0;
   }
   
   .hero__container {
@@ -206,6 +217,7 @@
     height: 90%;
     text-align: center;
     padding: 30px;
+
   }
   
   .hero__heading {
@@ -214,9 +226,33 @@
     color: #1a1a1a;
   }
 
-* {
-    box-sizing: border-box;
-}
+  .hero__container h2 {
+    background-color: #0A0A0A;
+    background-image: linear-gradient(to right, #0766cb 0%, #0A0A0A 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+  }
+
+
+  .hero__container h3 {
+    color: #010101;
+    font-size: 80;
+  }
+  .hero__container h3:hover ~ p {
+    color: #1a3be0;
+    transition: all 0.3s ease;
+  }
+  .hero__container p:hover ~ h3 {
+    color: #1a3be0;
+    transition: all 0.3s ease;
+  }
+
+
 .columns {
     float: left;
     width: 33.3%;
@@ -243,31 +279,80 @@
     font-size: 20px;
   }
 
-  div.kauppa {
+.hinta .valkonen {
+  background-color: white;
+  font-size: 20px;
+  }
+  .kauppa_container {
+    background: #a5a5a5; ;  
+    padding: 100px 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .kauppabtn_container {
+    background: #a5a5a5;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .kauppa_btn {/* .btn kohdasta sama väri */
+    font-size: 1.8rem;
+    background: #0A0A0A;
+    background: -webkit-linear-gradient(to right, #0A0A0A, #0A0A0A, #0A0A0A);
+    background: linear-gradient(to right, #0A0A0A, #0A0A0A, #0A0A0A);
+    padding: 20px 60px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+  }
+
+  .kauppa_btn a {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .kauppa_btn:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #3906f5;
+    transition: all 0.35s;
+    border-radius: 4px;
+  }
+
+  .kauppa {
     border: 1px solid #ccc;
+    background-color: white;
+    align-items: center;
   }
   
   div.kauppa:hover {
-    border: 1px solid #777;
+    border: 1px solid #010101;
   }
   
-  div.kauppa img {
+  .kauppa img {
     width: 40%;
     height: auto;
   }
   
-  div.desc {
+  .desc {
     padding: 15px;
     text-align: center;
   }
   
-  * {
-    box-sizing: border-box;
-  }
-  
   .responsive {
     padding: 0 6px;
-    float: left;
     width: 24.99999%;
   }
   
@@ -301,88 +386,6 @@
   }
 
   /* Hinnasto */
-  .main {
-    background-color: #131313; 
-  }
-  
-  .main__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    height: 90%;
-    z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    padding: 0 50px;
-  }
-  
-  .main__content {
-    color: #fff;
-    width: 100%;
-  }
-  
-  .main__content h1 {
-    font-size: 2rem;
-    background-color: #fe3b6f;
-    background-image: linear-gradient(to top, #ff087b 0%, #ed1a52 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    text-transform: uppercase;
-    margin-bottom: 32px;
-  }
-  
-
-  .main__content h2 {
-    font-size: 4rem;
-    background: #ffffff; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #ffffff,
-      #ffffff
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #ffffff,
-      #ffffff
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    }
-    
-  .main__content p {
-    margin-top: 1rem;
-    font-size: 2rem;
-    font-weight: 700;
-  }
-  
-
- 
-    .main__content {
-      text-align: center;
-      margin-bottom: 4rem;
-    }
-  
-    .main__content h1 {
-      font-size: 2.5rem;
-      margin-top: 2rem;
-    }
-    
-    .main__content h2 {
-      font-size: 3rem;
-    }
-  
-    .main__content p {
-      margin-top: 1rem;
-      font-size: 1.5rem;
-    }
     
 
    

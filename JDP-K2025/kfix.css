@@ -466,7 +466,7 @@
   }
 }
 
-/* Yhteystiedot */
+/* Services Section */
 .services {
   background: #a5a5a5;
   display: flex;
@@ -503,8 +503,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #0A0A0A;
-  background-image: linear-gradient(to right, #8e8d8d 0%, #8e8d8d 100%);
+  color: #fff;
+  background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
   transition: 0.3s ease-in;
 }
 
@@ -512,25 +512,25 @@
   background: #1fa2ff; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #8e8d8d,
-    #8e8d8d,
-    #8e8d8d
+    #a6ffcb,
+    #12d8fa,
+    #1fa2ff
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #8e8d8d,
-    #8e8d8d,
-    #8e8d8d
+    #a6ffcb,
+    #12d8fa,
+    #1fa2ff
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .services__card:nth-child(3) {
   background-image: linear-gradient(
     -225deg,
-    #8e8d8d 0%,
-    #8e8d8d 29%,
-    #8e8d8d 67%,
-    #8e8d8d 100%
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
   );
 }
 
