@@ -7,7 +7,7 @@
   }
   
   .navbar {
-    background:#8e8d8d; /* Valikon väri */
+    background:#8e8d8d; 
     height: 80px;
     display: flex;
     justify-content: center;
@@ -29,7 +29,7 @@
     padding: 0 50px;
   }
   
-  #navbar__logo {  /* Muuta tähän musta K-Fix logo */
+  #navbar__logo {  
     background-color: #1700ab;
     background-image: linear-gradient(to top, #000000 0%, #0a94e4 100%);
     background-size: 100%;
@@ -84,7 +84,7 @@
     color: #fff;
   }
 
-  .button { /* Hinnasto, etusivu kaikki väri valkoinen.mobiili hampurilasvalikko paalla. */
+  .button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -201,9 +201,9 @@
     }
   }
   
-  /* pää kohta */
+  
   .hero {
-    background: #a5a5a5; ;  /* fallback for old browsers */
+    background: #a5a5a5; ;  
     padding: 150px 0;
   }
   
@@ -241,7 +241,7 @@
 
   .hero__container h3 {
     color: #010101;
-    font-size: 80;
+    font-size: 60px;
   }
   .hero__container h3:hover ~ p {
     color: #1a3be0;
@@ -251,6 +251,12 @@
     color: #1a3be0;
     transition: all 0.3s ease;
   }
+
+  .hero__container h3 p {
+    color: #010101;
+    font-size: 50px;
+  }
+
 
 
 .columns {
@@ -283,13 +289,7 @@
   background-color: white;
   font-size: 20px;
   }
-  .kauppa_container {
-    background: #a5a5a5; ;  
-    padding: 100px 0;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-  }
+  
   .kauppabtn_container {
     background: #a5a5a5;
     align-items: center;
@@ -297,7 +297,7 @@
     justify-content: center;
   }
 
-  .kauppa_btn {/* .btn kohdasta sama väri */
+  .kauppa_btn {
     font-size: 1.8rem;
     background: #0A0A0A;
     background: -webkit-linear-gradient(to right, #0A0A0A, #0A0A0A, #0A0A0A);
@@ -326,15 +326,25 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: #3906f5;
+    background: #9284c6;
     transition: all 0.35s;
     border-radius: 4px;
   }
-
+  
+  .kauppa_container {
+    background: #a5a5a5; ;  
+    padding: 10px 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  
   .kauppa {
     border: 1px solid #ccc;
     background-color: white;
-    align-items: center;
+    align: center;
+    display: block;
+    justify-content: center;
   }
   
   div.kauppa:hover {
@@ -344,7 +354,14 @@
   .kauppa img {
     width: 40%;
     height: auto;
+    justify-content: center;
+    border: green 10 px;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
   }
+
+
   
   .desc {
     padding: 15px;
@@ -419,7 +436,7 @@
     }
   }
   
-  /* Services Section */
+  
   .services {
     background: #131313;
     display: flex;
@@ -474,7 +491,7 @@
       #a6ffcb,
       #12d8fa,
       #1fa2ff
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ); 
   }
   
   .services__card:nth-child(3) {
