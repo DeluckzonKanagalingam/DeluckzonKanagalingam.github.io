@@ -202,6 +202,15 @@
   padding: 200px 0;
 }
 
+.hero__container img {
+  display: inline-block;
+  width: 20%;
+  height: auto;
+  border: #010101 10 px;
+  justify-content: space-between;
+  gap: 20px;
+}
+
 .hero__container {
   display: flex;
   flex-direction: column;
