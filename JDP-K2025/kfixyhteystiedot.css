@@ -269,11 +269,11 @@
 }
 
 body{
-  background: #a5a5a5;
+  background: #fff;
   font-size: 14px;
 }
 .container{
-  width: 80;
+  width: 80%;
   margin: 50px auto;
 }
 .contact-box{
@@ -289,7 +289,7 @@ body{
 .contact-right{
   flex-basis: 40%;
   padding: 40px;
-  background: #1c00b5;
+  background: #0A0A0A;
   color: #fff;
 }
 
@@ -330,11 +330,11 @@ textarea{
 label{
   margin-bottom: 6px;
   display: block;
-  color: #1c00b5;
+  color: #0A0A0A;
 }
 
 button{
-  background: #1c00b5;
+  background: #0A0A0A;
   width: 100px;
   border: none;
   outline: none;
@@ -346,7 +346,7 @@ button{
 }
 
 .contact-left h3{  /*send your request otsikko*/
-  color: #1c00b5;
+  color:  #0766cb;
   font-weight: 600;
   margin-bottom: 30px;
 }
@@ -365,7 +365,7 @@ tr td{
 }
 
   .main { /* Ei ole tän sivuston */
-    background-color: #a5a5a5; 
+    background-color: #0A0A0A; 
   }
   
 
