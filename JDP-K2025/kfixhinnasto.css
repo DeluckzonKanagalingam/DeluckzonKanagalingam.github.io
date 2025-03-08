@@ -27,21 +27,16 @@
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 50px;
+    align-items: center;
   }
   
-  #navbar__logo {  
-    background-color: #1700ab;
-    background-image: linear-gradient(to top, #000000 0%, #0a94e4 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
+  #navbar__logo img { 
+    border: 30px;
+   border-color: #010101;
+   border-radius: 50%;
+   max-width: 20%;
+   height: auto;
+   object-fit: cover;
   }
   
   .navbar__menu {
@@ -141,7 +136,8 @@
       }
     
     #navbar__logo {
-      padding-left: 25px;
+      padding-left: 40px;
+      align-items: center;
     }
   
     .navbar__toggle .bar {
@@ -328,9 +324,17 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: #9284c6;
+    background: #3906f5;
     transition: all 0.35s;
     border-radius: 4px;
+  }
+
+  .kauppa_btn:hover {
+    color: #fff;
+  }
+
+  .kauppa_btn:hover:after {
+    width: 100%;
   }
   
   .kauppa_container {
