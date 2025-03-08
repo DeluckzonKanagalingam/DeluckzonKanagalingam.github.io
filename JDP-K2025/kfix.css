@@ -1,4 +1,4 @@
-* {
+* {/* elementtien värit sisältää reunukset ja täytteet */
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -7,7 +7,7 @@
 }
 
 .navbar {
-  background:#8e8d8d; /* Valikon väri */
+  background:#8e8d8d; /* navpalkin muotoilu ja sen taustan väri */
   height: 80px;
   display: flex;
   justify-content: center;
@@ -18,7 +18,7 @@
   z-index: 999;
 }
 
-.navbar__container {
+.navbar__container { /* luodaan container */
   display: flex;
   justify-content: space-between;
   height: 80px;
@@ -29,7 +29,7 @@
   padding: 0 50px;
 }
 
-#navbar__logo {  /* Muuta tähän musta K-Fix logo */
+#navbar__logo {  /* K-fixin logo navpalkissa väri ja muut asettelut */
   background-color: #1700ab;
   background-image: linear-gradient(to top, #000000 0%, #0a94e4 100%);
   background-size: 100%;
@@ -45,7 +45,7 @@
 }
 
 .navbar__menu {
-  display: flex;
+  display: flex; /* tän avulla kun asiakas menee nagigoinnissa se on responsiivinen. */
   align-items: center;
   list-style: none;
 }
@@ -395,7 +395,7 @@
   background: linear-gradient(to right, #0A0A0A, #0A0A0A);
 }
 
-/* Mobile Responsive */
+/* Mobiili responsiivisuus */
 @media screen and (max-width: 1100px) {
   .main__container {
     display: grid;
@@ -466,7 +466,7 @@
   }
 }
 
-/* Services Section */
+/* palvelut kohta */
 .services {
   background: #a5a5a5;
   display: flex;
@@ -582,7 +582,7 @@
   }
 }
 
-/* Footer CSS */
+/* Footer kohta */
 .footer__container {
   background-color: #131313;
   padding: 5rem 0;

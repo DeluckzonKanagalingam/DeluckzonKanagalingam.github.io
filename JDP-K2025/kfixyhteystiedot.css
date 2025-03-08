@@ -54,7 +54,7 @@
     height: 80px;
   }
   
-  .navbar__links { /* Hinnasto, etusivu kaikki väri valkoinen.tyopoyta */
+  .navbar__links { /* palvelut, etusivu kaikki väri valkoinen.tyopoyta */
     color: #fff;
     display: flex;
     align-items: center;
@@ -83,7 +83,7 @@
     color: #fff;
   }
   
-  .button { /* Hinnasto, etusivu kaikki väri valkoinen.mobiili hampurilasvalikko paalla. */
+  .button { /* palvelut, etusivu kaikki väri valkoinen.mobiili hampurilasvalikko paalla. */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,7 +129,7 @@
       z-index: -1;
     }
   
-    .navbar__menu.active { /* , etusivu kaikki väri valkoinen.tyopoyta */
+    .navbar__menu.active { /* etusivu kaikki väri valkoinen.tyopoyta */
       background: #8e8d8d;
       top: 100%;
       opacity: 1;
@@ -364,7 +364,7 @@ tr td{
   padding-top: 20px;
 }
 
-  .main { /* Ei ole tän sivuston */
+  .main { /* tää on sama */
     background-color: #0A0A0A; 
   }
   
@@ -498,7 +498,7 @@ tr td{
     background: linear-gradient(to right, #0A0A0A, #0A0A0A);
   }
   
-  /* Mobile Responsive */
+  /* Mobiili responsiivisuus */
   @media screen and (max-width: 1100px) {
     .main__container {
       display: grid;
@@ -569,7 +569,7 @@ tr td{
     }
   }
   
-  /* Services Section */
+  /* Palvelut kohta */
   .services {
     background: #a5a5a5;
     display: flex;
