@@ -125,7 +125,7 @@
       z-index: -1;
     }
   
-    .navbar__menu.active { /* Hinnasto, etusivu kaikki väri valkoinen.tyopoyta */
+    .navbar__menu.active {
         background: #8e8d8d;
         top: 100%;
         opacity: 1;
@@ -285,6 +285,7 @@
 .hinta .valkonen {
   background-color: white;
   font-size: 20px;
+  padding: 20px;
   }
   
   .kauppabtn_container {
