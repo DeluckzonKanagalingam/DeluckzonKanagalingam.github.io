@@ -196,19 +196,10 @@
   }
 }
 
-/* pää kohta */
+/* Etusivu */
 .hero {
   background: #a5a5a5; ;  /* fallback for old browsers */
   padding: 200px 0;
-}
-
-.hero__container img {
-  display: inline-block;
-  width: 20%;
-  height: auto;
-  border: #010101 10 px;
-  justify-content: space-between;
-  gap: 20px;
 }
 
 .hero__container {
@@ -470,7 +461,7 @@
   }
 }
 
-/* palvelut kohta */
+/*Etusivu palvelut kohta */
 .services {
   background: #a5a5a5;
   display: flex;
@@ -701,4 +692,303 @@
     padding: 10px;
     width: 100%;
   }
+}
+
+/*Palvelut*/
+.hero_palvelu {
+  background: #a5a5a5; ;  
+  padding: 150px 0;
+}
+
+.hero__container_palvelu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 90%;
+  text-align: center;
+  padding: 30px;
+}
+
+.hero__heading_palvelu {
+  font-size: 90px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: #1a1a1a;
+}
+
+.hero__container_palvelu h2 {
+  background-color: #0A0A0A;
+  background-image: linear-gradient(to right, #0766cb 0%, #0A0A0A 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 5rem;
+  font-size: 2.5rem;
+}
+
+
+.hero__container_palvelu h3 {
+  color: #010101;
+  font-size: 60px;
+  display: inline-block;
+}
+.hero__container_palvelu h3:hover {
+  color: #1a3be0;
+  transition: all 0.3s ease;
+}
+
+.hero__container_palvelu p:hover {
+  color: #1a3be0;
+  transition: all 0.3s ease;
+}
+
+
+.hero__container_palvelu h3 p {
+  color: #010101;
+  font-size: 30px;
+  display: inline-block;
+}
+
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+.hinta {
+  list-style-type: none;
+  border: 1px solid #1a1a1a;
+  margin: 0;
+  padding: 0
+}
+.hinta .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+.hinta li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+.hinta .harmaa {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.hinta .valkonen {
+background-color: white;
+font-size: 20px;
+padding: 20px;
+}
+
+.kauppabtn_container {
+  background: #a5a5a5;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+}
+
+.kauppa_btn {
+  position: relative;
+  font-size: 1.8rem;
+  background: #101010;
+  background: linear-gradient(to right, #101010, #101010, #101010);
+  padding: 40px 80px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: background-color 0.35s ease, width 0.35s ease;
+  outline: none;
+  display: inline-block;
+}
+
+.kauppa_btn a {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-decoration: none;
+}
+
+.kauppa_btn:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #3906f5;
+  transition: all 0.35s;
+  border-radius: 4px;
+}
+
+.kauppa_btn:hover {
+  color: #fff;
+}
+
+.kauppa_btn:hover:after {
+  width: 100%;
+}
+
+.kauppa_container {
+  background: #a5a5a5; ;  
+  padding: 10px 0px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.kauppa {
+  border: 1px solid #ccc;
+  background-color: white;
+  align: center;
+  display: block;
+  justify-content: center;
+}
+
+.kauppa:hover {
+  border: 1px solid #010101;
+}
+
+.kauppa img {
+  width: 40%;
+  height: auto;
+  justify-content: center;
+  border: green 10 px;
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.responsive {
+  margin-bottom: 150px;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Yhtestiedot*/
+
+.ytbody{
+  background: #fff;
+  font-size: 14px;
+}
+.container{
+  width: 80%;
+  margin: 50px auto;
+}
+.contact-box{
+  background: #fff;
+  display: flex; 
+}
+
+.contact-left{
+  flex-basis: 60%;
+  padding: 40px 60px;
+}
+
+.contact-right{
+  flex-basis: 40%;
+  padding: 40px;
+  background: #0A0A0A;
+  color: #fff;
+}
+
+.container h1{
+  margin-bottom: 10px;
+}
+
+.container p{
+  margin-bottom: 40px; 
+}
+
+.input-row{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.input-row .input-group{
+  flex-basis: 45%;
+}
+
+input{/* tää on se täytekenttä */
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  padding-bottom: 5px;
+}
+
+textarea{
+  width: 100%;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+label{
+  margin-bottom: 6px;
+  display: block;
+  color: #0A0A0A;
+}
+
+ .submit_btn{
+  background: #0A0A0A;
+  width: 100px;
+  border: none;
+  outline: none;
+  color: #fff;
+  height: 35px;
+  border-radius: 30px;
+  margin-top: 20px;
+  box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3); 
+}
+
+.contact-left h3{  /*send your request otsikko*/
+  color:  #0766cb;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.contact-right h3{  /*send your request otsikko*/
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+tr td:first-child{
+    padding-right: 20px;
+}
+
+tr td{
+  padding-top: 20px;
 }
